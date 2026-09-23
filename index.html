@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift For Her</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Untuk LALAK</h1>
+  </header>
+
+  <main class="app">
+    <button class="round-btn sound-btn" id="soundBtn" aria-label="Toggle sound">♪</button>
+    <button class="round-btn pause-btn" id="pauseBtn" aria-label="Pause animation">Ⅱ</button>
+
+    <!-- Scene 1: growing tree -->
+    <section class="scene active" id="treeScene">
+      <div class="tree-stage">
+        <div class="ground"></div>
+        <div class="trunk" id="trunk"></div>
+        <div class="branches" id="branches"></div>
+        <div class="heart-crown" id="heartCrown"></div>
+        <button class="tiny-heart" id="startBtn">♥ <span>Klik di sini</span></button>
+      </div>
+    </section>
+
+    <!-- Scene 2: message -->
+    <section class="scene message-scene" id="letterScene">
+      <div class="message-card">
+        <div class="big-love-text">I LOVE YOU LALAKK</div>
+      </div>
+    </section>
+
+    <!-- Scene 3: final -->
+    <section class="scene final-scene" id="finalScene">
+      <div class="final-content">
+        <button class="letter-button" id="letterButton">Surat Kecil Untukmu</button>
+        <div class="final-counter">
+          <p>Waktu kita bersama...</p>
+          <div id="timer" class="timer-grid">
+            <div class="time-unit"><strong id="days">0</strong><span>days</span></div>
+            <div class="time-unit"><strong id="hours">00</strong><span>hours</span></div>
+            <div class="time-unit"><strong id="minutes">00</strong><span>min</span></div>
+            <div class="time-unit"><strong id="seconds">00</strong><span>sec</span></div>
+          </div>
+        </div>
+        <div class="final-tree">
+          <div class="final-heart-crown" id="finalHeartCrown"></div>
+          <div class="love-message" id="loveMessage">I LOVE YOU LALAKK</div>
+          <div class="final-trunk"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/komang-raim-laode.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
